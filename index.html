@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON-Data-Encryptor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container d-flex text-center align-items-center justify-content-center vh-100">
+    <div class="col-12">
+      <h1>JSON-Data-Encryptor</h1><br/>
+      <!-- Encrypt key -->
+      <div class="form-group">
+        <label for="key">Encrypt Key (Should Be 32 Characters) :</label>
+        <input type="text" class="form-control" id="secretKey" placeholder="Enter Encrypt Key" value="">
+      </div>
+      <div class="form-group">
+        <label for="data">Data to Encrypt :</label>
+        <textarea class="form-control" id="dataToEncrypt" cols="30" rows="5" placeholder="Paste JSON Data Here..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="data">Data to Decrypt :</label>
+        <textarea class="form-control" id="dataToDecrypt" cols="30" rows="5" placeholder="Paste Encrypt Data Here..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="decryptData()">Decrypt</button>
+      <button type="submit" class="btn btn-primary" onclick="encryptData()">Encrypt</button>
+    </div>
+  </div>
+  <script src="./public/js/browser.js"></script>
+</body>
+</html>
